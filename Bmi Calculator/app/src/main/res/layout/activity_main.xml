@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#673AB7">
+
+    <DigitalClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do You Want to Know About Your BMI?"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:background="#FF9800"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What Is Your Weight?"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="#03A9F4"
+        />
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="weight"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="#FF9800"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Height In Feet?"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="#2196F3"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Height in Inch?"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="#2196F3"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Feet"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Inch"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Here"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result Here"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="#2196F3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do You Want To Know About Body Fitness? Then Click Play Button."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="#FFC107"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="#03A9F4">
+
+        <ImageButton
+            android:id="@+id/next1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/next2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/next3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/next4"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8931936554324369/3589578762">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
